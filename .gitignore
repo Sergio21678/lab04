@@ -1,0 +1,17 @@
+# Gradle files
+.gradle/
+build/
+
+# Java files
+.classpath
+.project
+.settings/
+
+# Android Studio files
+.idea/
+.vscode/
+.DS_Store
+*.iml
+
+# Android build folders
+/app/build/
