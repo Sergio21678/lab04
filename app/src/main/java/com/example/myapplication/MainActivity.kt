@@ -4,8 +4,6 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.border
-import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
@@ -24,21 +22,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.ui.theme.MyApplicationTheme
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
-import androidx.compose.ui.unit.dp
-import androidx.compose.material3.Text
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 
 
 class MainActivity : ComponentActivity() {
@@ -91,20 +80,9 @@ fun MyOutlinedTextField() {
         onValueChange = { newText ->
             text = newText
         },
-        label = { Text("Enter your text") },
-        textStyle = TextStyle(
-            fontSize = 20.sp,  // Cambia el tamaño de la fuente
-            color = Color.Black // Cambia el color del texto
-        ),
-        modifier = Modifier
-            .padding(16.dp)  // Añadir padding alrededor del campo de texto
-            .border(1.dp, Color.Red)  // Añadir un borde rojo alrededor del campo de texto
+        label = { Text("Enter your text") }
     )
 }
-
-
-
-
 
 @Preview(showBackground = true)
 @Composable
